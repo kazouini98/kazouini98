@@ -1,0 +1,24 @@
+from qiskit import QuantumCircuit, assemble, Aer
+from qiskit.visualization import plot_histogram, plot_bloch_vector
+from math import sqrt, pi
+
+qc = QuantumCircuit(1)  # Create a quantum circuit with one qubit
+initial_state = [0,1]   # Define initial_state as |1>
+qc.initialize(initial_state, 0) # Apply initialisation operation to the 0th qubit
+qc.draw()  # Let's view our circuit
+
+#this is how to define a state and then measure the probability of each state and plot the prob in a histogram
+initial_state = [1/sqrt(2), 1j/sqrt(2)]  # Define state |q_0>
+qc = QuantumCircuit(1) # Must redefine qc
+qc.initialize(initial_state, 0) # Initialize the 0th qubit in the state `initial_state`
+qc.save_statevector() # Save statevector
+qobj = assemble(qc)
+state = sim.run(qobj).result().get_statevector() # Execute the circuit
+print(state)           # Print the result
+results = sim.run(qobj).result().get_counts()
+plot_histogram(results)
+
+#how to plot a bloch sphere
+from qiskit_textbook.widgets import plot_bloch_vector_spherical
+coords = [pi/2,0,1] # [Theta, Phi, Radius]
+plot_bloch_vector_spherical(coords) # Bloch Vector with spherical coordinates
