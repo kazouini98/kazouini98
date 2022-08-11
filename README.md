@@ -1,10 +1,5 @@
-- 👋 Hi, I’m @kazouini98
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- Hi, I’m Kazouini and I am a graduate Physics student at the University of Tuebingen
+- I’m interested in Physics, Quantum Computation, Quantum Applications and Machine Learning
+- I’m currently in writing my MSc Thesis under the topic of Entanglement of two LC Circuits by Photon-Pressure
+- E-mail: kazouini.mohamad@gmail.com
 
-<!---
-kazouini98/kazouini98 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
